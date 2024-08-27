@@ -101,8 +101,6 @@ header{
             height: 42px;
             border-radius: 14px;
         }
-
-
     }
 }
 
@@ -231,8 +229,8 @@ main{
 
             & .register-btn{
                 width: 104px;
-
-            }
+                margin-left: 16px;
+            }   
 
             & .close-img-container{
                 display: none;
@@ -242,24 +240,69 @@ main{
 
     }
     main{
-        flex-direction: row;
-        margin-top: 150px;
-
         & h2 {
-            font-size: 42px;
+            font-size: 2.625em;
         }
 
         & picture {
             width: 80%;
-            
+            margin: 24px auto;
         }
 
+        & button{
+            width: 163px;
+            height: 56px;
+            font-size: 1.125em;
+            margin-bottom: 46px;
+        }
 
+        & p{
+            width: 600px;
+            font-size: 1.125em;
+            margin: 40px auto;
+        }
     }
 }
 
 @media (min-width: 1024px){
-    picture {
-        width: 50%;
+    header{
+        margin: 21px 80px 67px;
+
+        & nav{
+            margin-left: 48px;
+        }
     }
+
+    main{
+        flex-direction: row;
+        margin:0 180px 20px 165px;
+        justify-content: space-between;
+
+        & picture{
+            width: 400px;
+            margin: 0;
+        }
+
+        & h2 {
+            text-align: left;
+            font-size: 4.5em;
+            width: 549px;
+            margin: 100px 0 48px;
+
+        }
+
+        & p {
+            text-align: left;
+            font-size: 1.125em;
+            width: 445px;
+            font-weight: 500;
+            margin:0 0 25px;
+        }
+
+        & button{
+            margin: 0 0 116px;
+        }
+    }
+
+    
 }
